@@ -12,9 +12,10 @@
 2. [安装docker-compose](https://docs.docker.com/compose/reference/overview/)
 
 3. 克隆代码并且修改shopxo文件夹权限
-  - git clone git@github.com:gongfuxiang/shopxo.git
-  - sudo chmod -R 777 shopxo 
   - git clone git@github.com:captainChaozi/shopxo-docker.git
+  - cd shopxo-docker/web
+  - git clone git@github.com:gongfuxiang/shopxo.git ./
+  - sudo chmod -R 777 ./ 
 
 4. 用docker-compose 运行项目包括数据库,如果不想用容器里面的数据库可以单独配置数据库
   - cd shopxo-docker
